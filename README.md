@@ -1,16 +1,28 @@
-# React + Vite
+# React Reverse Dataflow
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React project that demonstrates reverse data flow: a child component updates its parent’s state through props and the onChange event.
 
-Currently, two official plugins are available:
+## Features
+- Parent component (App) manages state with useState.
+- Child component (Chk) communicates changes back to the parent.
+- Demonstrates how e.target.checked is used to capture checkbox state.
+- Button is enabled only when terms are accepted.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Why this project
+This project is part of my React learning journey. Each repo focuses on one core concept so I can track my progress and build a strong foundation.
 
-## React Compiler
+## How to run locally
+1. Clone the repository:
+   git clone https://github.com/phantekzy/react-reverse-dataflow.git
+2. Navigate into the folder:
+   cd react-reverse-dataflow
+3. Install dependencies:
+   npm install
+4. Start the development server:
+   npm run dev
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## What I learned
+- How parent and child components share data in React.
+- How reverse data flow works using props and functions.
+- The difference between e.target and e.target.checked.
+- Building a simple real-world UI pattern: checkbox + disabled button.
